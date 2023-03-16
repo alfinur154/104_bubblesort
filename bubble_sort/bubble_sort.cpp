@@ -25,3 +25,14 @@ void input() {
 		cin >> a[i];
 	}
 }
+void bubbleSortArray() {
+	for (int j = 0; j < n - i; j++) {
+		for (int j = 0; j < n - i; j++) {
+			if (a[j] > a[j + 1]) {
+				int temp = a[j];
+				a[j] = a[j + 1];
+				a[j + 1] = temp;
+			}
+		}
+	}
+}
